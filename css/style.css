@@ -7,7 +7,7 @@
 }*/
 
 * { /* El asterisco selecciona todo */
-    margin: 0; /* espacio entre el borde de la caja y la caja pegada? */
+    margin: 0; /* espacio entre el borde de la caja y la caja de al lado? */
     padding: 0; /* espacio entre el contenido y el borde de la caja */
 }
 
@@ -42,7 +42,6 @@ nav {
 
 }
 
-
 /* Seleccionar con clases */
 .info-section {
     background-color: violet;
@@ -52,9 +51,6 @@ nav {
 .form-section {
     text-align: center;
 }
-
-
-
 
 /* Seleccionar con id */
 #footer p{
