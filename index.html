@@ -1,39 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--linkear el archivo css-->
+    <link rel="stylesheet" href="./style.css">
     <title>App</title> <!--Nombre de la pestaña de la pagina-->
 </head>
+
 <body>
-    <h1>Hola Mundo</h1> <!--Titulo principal-->
+    <header id="header"> <!--Para el encabezado-->
+        Esto es un Encabezado
+    </header>
+    <nav><!--Menu de navegacion. Puede ir dentro del header tambien-->
+        <h2>Menu de navegacion</h2>
+        <ul> 
+            <li><a href="#imagen_004">ir a imagen 4</a></li>
+            <li><a href="#imagen_005">ir a imagen 5</a></li>
+            <li><a href="./otra_vista.html">ir a otra ventana sin target blank</a></li>
+            <li><a href="https://www.unlam.edu.ar/" target="_blank">ir a otra pagina web</a></li>
+        </ul>
+    </nav>
+    <main> <!--contenido principal de la pagina-->
 
-    <!--Titulos secundarios-->
-    <h2>Hola Mundo</h2>
-    <h3>Hola Mundo</h3>
-    <h4>Hola Mundo</h4>
-    <h5>Hola Mundo</h5>
-    <h6>Hola Mundo</h6>
+        <h1>Hola Mundo</h1> <!--Titulo principal-->
 
-    <p> <!--Parrafo-->
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> <!--Provoca un salto de linea-->Autem officiis similique recusandae temporibus quae voluptas harum vero labore <span>itaque</span> <!--Para diferenciar partes a nivel interno--> ratione, unde, aliquam magni. Iste dolorem molestiae ullam laborum consectetur numquam.
-    </p>
-    <p>
-        Esto es un parrafo
-    </p>
+        <!--Titulos secundarios-->
+        <h2>Hola Mundo</h2>
+        <h3>Hola Mundo</h3>
+        <h4>Hola Mundo</h4>
+        <h5>Hola Mundo</h5>
+        <h6>Hola Mundo</h6>
 
-    <ol> <!--Lista numerada "ordered list"-->
-        <li>item 1</li> <!--list item-->
-        <li>item 2</li>
-        <li>item 3</li>
-        <li>item 4</li>
-    </ol>
+        <p> <!--Parrafo-->
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> <!--Provoca un salto de linea-->Autem
+            officiis similique recusandae temporibus quae voluptas harum vero labore <span>itaque</span>
+            <!--Para diferenciar partes a nivel interno--> ratione, unde, aliquam magni. Iste dolorem molestiae ullam
+            laborum consectetur numquam.
+        </p>
+        <p>
+            Esto <small>es</small> <em>un</em> <strong>parrafo</strong>
+            <!--strong para definir partes importantes (negrita)-->
+            <!--em para resaltar (cursiva)-->
+            <!--small texto sin importacia (lo achica)-->
+        </p>
 
-    <ul> <!--Lista sin orden "unordered list"-->
-        <li>Papa</li>
-        <li>Batata</li>
-        <li>Choclo</li>
-        <li>Tomate</li>
-    </ul>
+        <ol> <!--Lista numerada "ordered list"-->
+            <li>item 1</li> <!--list item-->
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+        </ol>
+
+        <ul> <!--Lista sin orden "unordered list"-->
+            <li>Papa</li>
+            <li>Batata</li>
+            <li>Choclo</li>
+            <li>Tomate</li>
+        </ul>
+
+        <h3>Lista de imagenes</h3>
+        <ul>
+            <!--<a> redirecciona a un id predefinido. href="#nombre_id"-->
+            <li><a href="#imagen_001">ir a imagen 1</a></li>
+            <li><a href="#imagen_002">ir a imagen 2</a></li>
+            <li><a href="#imagen_003">ir a imagen 3</a></li>
+            <li><a href="#imagen_004">ir a imagen 4</a></li>
+            <li><a href="#imagen_005">ir a imagen 5</a></li>
+            <li><a href="#imagen_006">ir a imagen 6</a></li>
+            <li><a href="#imagen_007">ir a imagen 7</a></li>
+            <li><a href="#imagen_008">ir a imagen 8</a></li>
+        </ul>
+
+        <!--tambien con <a> podemos redireccionar a otras ventanas de la pagina. Con el atributo target="_blank" lo abre en otra pestaña-->
+        <a href="./otra_vista.html" target="_blank">ir a otra ventana con target blank</a><br>
+        <a href="./otra_vista.html">ir a otra ventana sin target blank</a><br>
+        <a href="https://www.unlam.edu.ar/" target="_blank">ir a otra pagina web</a>
+
+
+        <h4>Imagen 1</h4>
+        <!--Agregar imagen--> <!--src="ruta"--> <!--alt="descripcion en caso de que no se muestre la foto"-->
+        <img id="imagen_001" src="./imagenes/pancitatuaje.jpg" alt="Perra Panci" width="500">
+        <!--el id se le agrega para hacer referencia y redireccionarlo luego con un <a>-->
+        <a href="#header">volver</a>
+        <h4>Imagen 2</h4>
+        <img id="imagen_002" src="./imagenes/pancitatuaje.jpg" alt="Perra Panci" width="500">
+        <a href="#header">volver</a>
+        <h4>Imagen 3</h4>
+        <img id="imagen_003" src="./imagenes/pancitatuaje.jpg" alt="Perra Panci" width="500">
+        <a href="#header">volver</a>
+        <h4>Imagen 4</h4>
+        <img id="imagen_004" src="./imagenes/pancitatuaje.jpg" alt="Perra Panci" width="500">
+        <a href="#header">volver</a>
+        <h4>Imagen 5</h4>
+        <img id="imagen_005" src="./imagenes/pancitatuaje.jpg" alt="Perra Panci" width="500">
+        <a href="#header">volver</a>
+        <h4>Imagen 6</h4>
+        <img id="imagen_006" src="./imagenes/pancitatuaje.jpg" alt="Perra Panci" width="500">
+        <a href="#header">volver</a>
+        <h4>Imagen 7</h4>
+        <img id="imagen_007" src="./imagenes/pancitatuaje.jpg" alt="Perra Panci" width="500">
+        <a href="#header">volver</a>
+        <h4>Imagen 8</h4>
+        <img id="imagen_008" src="./imagenes/pancitatuaje.jpg" alt="Perra Panci" width="500">
+        <a href="#header">volver</a>
+
+        <div> <!--Para ocupar todo el ancho de la pagina? (intentnar evitarlos)-->
+            <img src="./imagenes/pancitatuaje.jpg" alt="Perra Panci" width="500">
+        </div>
+        <div>
+            <img src="./imagenes/pancitatuaje.jpg" alt="Perra Panci" width="500">
+        </div>
+    </main>
+
+    <section> <!--Para info secundaria-->
+        <h3>Trending on DEV</h3>
+        <article>Articulo 1</article>
+        <article>Articulo 2</article>
+        <article>Articulo 3</article>
+    </section>
+
+    <aside> <!--info de costadito? info que no tenga mucho que ver con el main-->
+        <h3>Publicidad</h3>
+        <article>Articulo 4</article>
+    </aside>
+    <footer> <!--pie de pagina-->
+        Esto es un pie de pagina
+    </footer>
 </body>
+
 </html>
