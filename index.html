@@ -5,116 +5,222 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--linkear el archivo css-->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>App</title> <!--Nombre de la pestaña de la pagina-->
 </head>
 
 <body>
     <header id="header"> <!--Para el encabezado-->
-        Esto es un Encabezado
-    </header>
-    <nav><!--Menu de navegacion. Puede ir dentro del header tambien-->
-        <h2>Menu de navegacion</h2>
-        <ul> 
-            <li><a href="#imagen_004">ir a imagen 4</a></li>
-            <li><a href="#imagen_005">ir a imagen 5</a></li>
-            <li><a href="./otra_vista.html">ir a otra ventana sin target blank</a></li>
-            <li><a href="https://www.unlam.edu.ar/" target="_blank">ir a otra pagina web</a></li>
-        </ul>
-    </nav>
-    <main> <!--contenido principal de la pagina-->
-
         <h1>Hola Mundo</h1> <!--Titulo principal-->
+        Esto es un Encabezado
+        <nav><!--Menu de navegacion. Puede ir dentro del header tambien-->
+            <h2>Menu de navegacion</h2>
+            <ul>
+                <li><a href="#imagen_004">ir a imagen 4</a></li>
+                <li><a href="#imagen_005">ir a imagen 5</a></li>
+                <li><a href="./otra_vista.html">ir a otra ventana sin target blank</a></li>
+                <li><a href="./pages/contacto.html">Contato</a></li>
+                <li><a href="https://www.unlam.edu.ar/" target="_blank">ir a otra pagina web</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!--Titulos secundarios-->
-        <h2>Hola Mundo</h2>
-        <h3>Hola Mundo</h3>
-        <h4>Hola Mundo</h4>
-        <h5>Hola Mundo</h5>
-        <h6>Hola Mundo</h6>
+    <main> <!--contenido principal de la pagina-->
+        <section class="info-section">
+            <!--Titulos secundarios-->
+            <h2>Hola Mundo</h2>
+            <h3>Hola Mundo</h3>
+            <h4>Hola Mundo</h4>
+            <h5>Hola Mundo</h5>
+            <h6>Hola Mundo</h6>
+        </section>
 
-        <p> <!--Parrafo-->
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> <!--Provoca un salto de linea-->Autem
-            officiis similique recusandae temporibus quae voluptas harum vero labore <span>itaque</span>
-            <!--Para diferenciar partes a nivel interno--> ratione, unde, aliquam magni. Iste dolorem molestiae ullam
-            laborum consectetur numquam.
-        </p>
-        <p>
-            Esto <small>es</small> <em>un</em> <strong>parrafo</strong>
-            <!--strong para definir partes importantes (negrita)-->
-            <!--em para resaltar (cursiva)-->
-            <!--small texto sin importacia (lo achica)-->
-        </p>
+        <section class="info-section">
+            <p> <!--Parrafo-->
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> <!--Provoca un salto de linea-->Autem
+                officiis similique recusandae temporibus quae voluptas harum vero labore <span>itaque</span>
+                <!--Para diferenciar partes a nivel interno--> ratione, unde, aliquam magni. Iste dolorem molestiae
+                ullam
+                laborum consectetur numquam.
+            </p>
 
-        <ol> <!--Lista numerada "ordered list"-->
-            <li>item 1</li> <!--list item-->
-            <li>item 2</li>
-            <li>item 3</li>
-            <li>item 4</li>
-        </ol>
+            <p>
+                Esto <small>es</small> <em>un</em> <strong>parrafo</strong>
+                <!--strong para definir partes importantes (negrita)-->
+                <!--em para resaltar (cursiva)-->
+                <!--small texto sin importacia (lo achica)-->
+            </p>
+        </section>
 
-        <ul> <!--Lista sin orden "unordered list"-->
-            <li>Papa</li>
-            <li>Batata</li>
-            <li>Choclo</li>
-            <li>Tomate</li>
-        </ul>
+        <section class="info-section">
+            <ol> <!--Lista numerada "ordered list"-->
+                <li>item 1</li> <!--list item-->
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+            </ol>
 
-        <h3>Lista de imagenes</h3>
-        <ul>
-            <!--<a> redirecciona a un id predefinido. href="#nombre_id"-->
-            <li><a href="#imagen_001">ir a imagen 1</a></li>
-            <li><a href="#imagen_002">ir a imagen 2</a></li>
-            <li><a href="#imagen_003">ir a imagen 3</a></li>
-            <li><a href="#imagen_004">ir a imagen 4</a></li>
-            <li><a href="#imagen_005">ir a imagen 5</a></li>
-            <li><a href="#imagen_006">ir a imagen 6</a></li>
-            <li><a href="#imagen_007">ir a imagen 7</a></li>
-            <li><a href="#imagen_008">ir a imagen 8</a></li>
-        </ul>
+            <ul> <!--Lista sin orden "unordered list"-->
+                <li>Papa</li>
+                <li>Batata</li>
+                <li>Choclo</li>
+                <li>Tomate</li>
+            </ul>
 
-        <!--tambien con <a> podemos redireccionar a otras ventanas de la pagina. Con el atributo target="_blank" lo abre en otra pestaña-->
-        <a href="./otra_vista.html" target="_blank">ir a otra ventana con target blank</a><br>
-        <a href="./otra_vista.html">ir a otra ventana sin target blank</a><br>
-        <a href="https://www.unlam.edu.ar/" target="_blank">ir a otra pagina web</a>
+            <h3>Lista de imagenes</h3>
+            <ul>
+                <!--<a> redirecciona a un id predefinido. href="#nombre_id"-->
+                <li><a href="#imagen_001">ir a imagen 1</a></li>
+                <li><a href="#imagen_002">ir a imagen 2</a></li>
+                <li><a href="#imagen_003">ir a imagen 3</a></li>
+                <li><a href="#imagen_004">ir a imagen 4</a></li>
+                <li><a href="#imagen_005">ir a imagen 5</a></li>
+                <li><a href="#imagen_006">ir a imagen 6</a></li>
+                <li><a href="#imagen_007">ir a imagen 7</a></li>
+                <li><a href="#imagen_008">ir a imagen 8</a></li>
+            </ul>
+
+            <!--tambien con <a> podemos redireccionar a otras ventanas de la pagina. Con el atributo target="_blank" lo abre en otra pestaña-->
+            <a href="./otra_vista.html" target="_blank">ir a otra ventana con target blank</a><br>
+            <a href="./otra_vista.html">ir a otra ventana sin target blank</a><br>
+            <a href="https://www.unlam.edu.ar/" target="_blank">ir a otra pagina web</a>
 
 
-        <h4>Imagen 1</h4>
-        <!--Agregar imagen--> <!--src="ruta"--> <!--alt="descripcion en caso de que no se muestre la foto"-->
-        <img id="imagen_001" src="./imagenes/pancitatuaje.jpg" alt="Perra Panci" width="500">
-        <!--el id se le agrega para hacer referencia y redireccionarlo luego con un <a>-->
-        <a href="#header">volver</a>
-        <h4>Imagen 2</h4>
-        <img id="imagen_002" src="./imagenes/pancitatuaje.jpg" alt="Perra Panci" width="500">
-        <a href="#header">volver</a>
-        <h4>Imagen 3</h4>
-        <img id="imagen_003" src="./imagenes/pancitatuaje.jpg" alt="Perra Panci" width="500">
-        <a href="#header">volver</a>
-        <h4>Imagen 4</h4>
-        <img id="imagen_004" src="./imagenes/pancitatuaje.jpg" alt="Perra Panci" width="500">
-        <a href="#header">volver</a>
-        <h4>Imagen 5</h4>
-        <img id="imagen_005" src="./imagenes/pancitatuaje.jpg" alt="Perra Panci" width="500">
-        <a href="#header">volver</a>
-        <h4>Imagen 6</h4>
-        <img id="imagen_006" src="./imagenes/pancitatuaje.jpg" alt="Perra Panci" width="500">
-        <a href="#header">volver</a>
-        <h4>Imagen 7</h4>
-        <img id="imagen_007" src="./imagenes/pancitatuaje.jpg" alt="Perra Panci" width="500">
-        <a href="#header">volver</a>
-        <h4>Imagen 8</h4>
-        <img id="imagen_008" src="./imagenes/pancitatuaje.jpg" alt="Perra Panci" width="500">
-        <a href="#header">volver</a>
+            <h4>Imagen 1</h4>
+            <!--Agregar imagen--> <!--src="ruta"--> <!--alt="descripcion en caso de que no se muestre la foto"-->
+            <img id="imagen_001" src="./imagenes/pancitatuaje.jpg" alt="Perra Panci" width="500">
+            <!--el id se le agrega para hacer referencia y redireccionarlo luego con un <a>-->
+            <a href="#header">volver</a>
+            <h4>Imagen 2</h4>
+            <img id="imagen_002" src="./imagenes/pancitatuaje.jpg" alt="Perra Panci" width="500">
+            <a href="#header">volver</a>
+            <h4>Imagen 3</h4>
+            <img id="imagen_003" src="./imagenes/pancitatuaje.jpg" alt="Perra Panci" width="500">
+            <a href="#header">volver</a>
+            <h4>Imagen 4</h4>
+            <img id="imagen_004" src="./imagenes/pancitatuaje.jpg" alt="Perra Panci" width="500">
+            <a href="#header">volver</a>
+            <h4>Imagen 5</h4>
+            <img id="imagen_005" src="./imagenes/pancitatuaje.jpg" alt="Perra Panci" width="500">
+            <a href="#header">volver</a>
+            <h4>Imagen 6</h4>
+            <img id="imagen_006" src="./imagenes/pancitatuaje.jpg" alt="Perra Panci" width="500">
+            <a href="#header">volver</a>
+            <h4>Imagen 7</h4>
+            <img id="imagen_007" src="./imagenes/pancitatuaje.jpg" alt="Perra Panci" width="500">
+            <a href="#header">volver</a>
+            <h4>Imagen 8</h4>
+            <img id="imagen_008" src="./imagenes/pancitatuaje.jpg" alt="Perra Panci" width="500">
+            <a href="#header">volver</a>
 
-        <div> <!--Para ocupar todo el ancho de la pagina? (intentnar evitarlos)-->
-            <img src="./imagenes/pancitatuaje.jpg" alt="Perra Panci" width="500">
-        </div>
-        <div>
-            <img src="./imagenes/pancitatuaje.jpg" alt="Perra Panci" width="500">
-        </div>
+            <div> <!--Para ocupar todo el ancho de la pagina? (intentnar evitarlos)-->
+                <img src="./imagenes/pancitatuaje.jpg" alt="Perra Panci" width="500">
+            </div>
+
+            <div>
+                <img src="./imagenes/pancitatuaje.jpg" alt="Perra Panci" width="500">
+            </div>
+        </section>
+
+        <section class="info-section form-section">
+            <h3>Formulario de registro</h3>
+            <form action="./pages/contacto.html" method="get" autocomplete="off" id="register-form">
+                <!--Pedir info al usuario-->
+                <div>
+                    <!--cada input necesita un nombre y un id iguales-->
+                    <label for="name"> <!--Se pone antes del input para indicar lo que hay que ingresar-->
+                        Nombre:
+                        <input type="text" name="name" id="name" placeholder="nananaa" required>
+                        <!--required no permite enviar si no se completa-->
+                        <!--placeholder para escribir ejemplos dentro de los campos y desaparece cuando comienza a escribir-->
+                    </label>
+                </div>
+                <div>
+                    <label for="email">
+                        Correo:
+                        <input type="email" name="email" id="email" placeholder="emepl@ejemp.com" required>
+                    </label>
+                </div>
+                <div>
+                    <label for="age">
+                        Edad:
+                        <input type="number" name="age" id="age" min="18" max="100" required>
+                        <!--se le puede agregar maximo y minimo-->
+                    </label>
+                </div>
+                <div>
+                    <label for="range">
+                        Rango:
+                        <input type="range" name="range" id="range" min="0" max="100">
+                    </label>
+                </div>
+                <div>
+                    <label for="birthdate">
+                        Fecha de nacimiento:
+                        <input type="date" name="birthdate" id="birthdate">
+                    </label>
+                </div>
+                <div>
+                    <label for="prefered_color">
+                        Color:
+                        <input type="color" name="prefered_color" id="prefered_color">
+                    </label>
+                </div>
+                <div>
+                    <label for="password">
+                        Contraseña:
+                        <input type="password" name="password" id="password">
+                    </label>
+                </div>
+                <div>
+                    <label for="country">
+                        Pais:
+                        <select name="country" id="country"> <!--Para que seleccione una opcion-->
+                            <option disabled selected>Selecciones un país</option>
+                            <!--como un placeholder que luego no se utiliza-->
+                            <option value="argentina">Argentina</option>
+                            <option value="brasil">Brasil</option>
+                            <option value="uruguay">Uruguay</option>
+                            <option value="chile">Chile</option>
+                        </select>
+                    </label>
+                </div>
+                <div>
+                    <label for="file">
+                        Adjuntar:
+                        <input type="file" name="file" id="file">
+                    </label>
+                </div>
+                <div>
+                    <label for="message">
+                        Mensaje:
+                        <textarea name="message" id="message"></textarea> <!--ingresar mucho texto-->
+                    </label>
+                </div>
+                <div>
+                    Sexo:
+                    <label for="male">
+                        Masculino
+                        <input type="radio" name="sex" id="male" value="male">
+                    </label>
+                    <label for="female"> <!--al ser inputs de tipo radio = mismo name diferente id-->
+                        Femenino
+                        <input type="radio" name="sex" id="female" value="female">
+                    </label>
+                </div>
+                <div>
+                    <label for="checkbox">
+                        Acepto los terminos y condiciones
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                    </label>
+                </div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Cancelar</button>
+            </form>
+        </section>
     </main>
 
-    <section> <!--Para info secundaria-->
+    <section class="info-section"> <!--Para separar las diferentos secciones de la pagina-->
         <h3>Trending on DEV</h3>
         <article>Articulo 1</article>
         <article>Articulo 2</article>
@@ -125,8 +231,9 @@
         <h3>Publicidad</h3>
         <article>Articulo 4</article>
     </aside>
-    <footer> <!--pie de pagina-->
-        Esto es un pie de pagina
+
+    <footer id="footer"> <!--pie de pagina-->
+        <p>Esto es un pie de pagina</p>
     </footer>
 </body>
 

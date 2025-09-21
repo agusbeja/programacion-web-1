@@ -1,0 +1,63 @@
+/* selector {
+    propiedad: valor;
+    propiedad: valor;
+    propiedad: valor;
+    propiedad: valor;
+    propiedad: valor;
+}*/
+
+* { /* El asterisco selecciona todo */
+    margin: 0; /* espacio entre el borde de la caja y la caja pegada? */
+    padding: 0; /* espacio entre el contenido y el borde de la caja */
+}
+
+/* Seleccionar con la etiqueta */
+body { 
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: red; /* color de la fuente */
+}
+
+h2 {
+    color: orange;
+}
+
+h3 {
+    color: blue;
+}
+
+h4 {
+    color: chartreuse;
+}
+
+p {
+    color: #fff;
+}
+
+nav {
+    background-color: grey; /* color de fondo */
+
+}
+
+
+/* Seleccionar con clases */
+.info-section {
+    background-color: violet;
+    color: #fff;
+}
+
+.form-section {
+    text-align: center;
+}
+
+
+
+
+/* Seleccionar con id */
+#footer p{
+    text-align: center; /* centrar */
+    background-color: #0a84ff;
+}
