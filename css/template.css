@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Apple Color Emoji", "SF Pro", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;;
+    
+}
+
+.header {
+    background-color: #000;
+    color: #ffffffeb;
+    height: 3.25em;
+    padding: 0 2.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .header__logo {
+    color: #ffffffa3;
+}
+
+.header .header__nav ul{
+    display: flex;
+    list-style: none; /* saca las viñetas de los ul */   
+    gap: 1.125em; 
+}
+
+.header .header__nav ul li a{
+    color: #ffffffa3;
+    text-decoration: none; /* saca el subrayado de los links*/
+    padding: 0 0.375em;
+    font-size: 1.0625em;
+    font-weight: bolder;
+}
+
+.header .header__options button {
+    background-color: #0a84ff;
+    color: #fff;
+    padding: 0 0.75em;
+    height: 1.75em;
+    border: none;
+    border-radius: 6px;   
+}
