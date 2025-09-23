@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.1em;
+    font-family: sans-serif;
+}
+
+.container-cv {
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    border: 1px solid #000;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    gap: 4em;
+}
+
+.datos-img {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.datos__ul {
+    list-style-type: none;
+}
+
+img {
+    border: 1px solid #000;
+    border-radius: 16px;
+    width: 7em;
+}
+
+.experiencia {
+    width: 50%;
+}
+
+.experiencia__lista {
+    margin-left: 1.7em;
+}
+
+.estudios {
+    width: 50%;
+}
+
+a {
+    font-size: 0.8em;
+}
+
+.estudios__lista {
+    margin-left: 1.7em;
+}
+
+.estudios__lista__lista {
+    margin-left: 1.7em;
+}
