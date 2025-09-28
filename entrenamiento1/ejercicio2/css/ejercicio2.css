@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header_container {
+    height: 4em;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+}
+
+.header_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_ul {
+    display: flex;
+    gap: 1em;
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
