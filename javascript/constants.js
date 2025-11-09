@@ -1,0 +1,1 @@
+export const MENU = ["inicio", "novedades", "contacto"];

@@ -1,5 +1,8 @@
 import { BuscadorElementos } from "./buscadorElementos.js";
 import { FormularioLogin } from "./formularioLogin.js";
+import { Navbar } from "./navbar.js";
+import { MENU } from "./constants.js";
+
 
 const buscadorDeElementos = new BuscadorElementos();
 const FORM = buscadorDeElementos.buscarElemento("#formulario1");
@@ -20,3 +23,8 @@ FORM.addEventListener('submit', (event) => {
     event.target.submit();
 
 })
+
+const navbar = new Navbar();
+
+
+navbar.renderItems(MENU);
