@@ -7,11 +7,17 @@ export class Navbar{
         const listContainer = document.querySelector(".js-menu-item");
 
         items.forEach((item) => {
-            console.log("item", item)
-        })
+            // const listItem = document.createElement("li");
+            // const linkItem = document.createElement("a");
 
-        console.log(listContainer);
-        
-        return console.log("Items del menu", items);
+            // linkItem.textContent = item.text;
+            // linkItem.href = item.link;
+
+            // listItem.appendChild(linkItem);
+            // listContainer.appendChild(listItem);
+
+            const templateItem = `<li><a href="${item.link}">${item.text}</a></li>`;
+            listContainer.innerHTML += templateItem;
+        })
     }
 }
