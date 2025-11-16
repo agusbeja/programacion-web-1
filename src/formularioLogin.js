@@ -1,10 +1,10 @@
 export class FormularioLogin {
-    constructor(username, password){
+    constructor(username, password) {
         this._username = username;
         this._password = password;
     }
 
-    get usuario(){
+    get username(){
         return this._username;
     }
 
@@ -13,7 +13,6 @@ export class FormularioLogin {
     }
 
     esValido(){
-        return (this._username != "aaa" && this._password != "123") && (this._username != "" && this.password != "");
+        return this.username !== 'aaa' && this.password !== '123';
     }
-    
 }

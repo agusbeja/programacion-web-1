@@ -1,13 +1,11 @@
 export class BuscadorElementos {
-    constructor() {
+    constructor() {}
 
-    }
-
-    buscarElemento(cssSelector) {
+    buscarElemento(cssSelector){
         return document.querySelector(cssSelector);
     }
 
-    obtenerElValor(cssSelector) {
+    obtenerElValor(cssSelector){
         return this.buscarElemento(cssSelector).value;
-    }
+    }  
 }
